@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding:20px;
+    background-color: blueviolet;
+    width: 100%;
+    height:100%;
+
+}
+.Heading{
+    align-items: center;
+    text-align: center;
+    color: azure;
+}
+
+
+
+html{
+    font-size: 1rem;
+}
+.slider{
+    position:relative;
+    max-width: 45rem;
+    height:25rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide{
+      position:absolute;
+      top:0;
+      width: 100%;
+      height: 25rem;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.slide img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.bottom-container{
+    display:flex;
+    justify-content:space-between;
+    margin: 30px;
+    padding: 0px 20px;
+}
+.bottom-container button{
+    padding:10px 30px;
+    background-color: rgb(red, green, blue);
+    border:none;
+    font-size:18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.dots-container{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+
+} 
+.dots-container .dot{
+    width:20px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: black;
+    cursor: pointer;
+}
+

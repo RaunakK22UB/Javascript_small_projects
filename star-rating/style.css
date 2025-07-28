@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+     padding:15px;
+     text-align: center;
+}
+
+/*  how to to make the any component in center with out the use of flex */
+.container{
+    position:absolute;
+    width:100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+.star-rating-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+}
+.fa-star-o::before{
+     content: '\f006';
+     font-size: 50px;
+}
+.selected-rating-container{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+.selected-rating-container p{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.fa-star:hover{
+cursor:pointer;
+}
+
+.fa-star::before {
+    content: '\f005';
+    color: rgb(243, 243, 86);
+    font-size: 50px;
+}
