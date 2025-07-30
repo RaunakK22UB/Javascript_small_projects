@@ -1,0 +1,44 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    padding:15px;
+    display: flex;
+      justify-content: center;
+    align-items: center;
+
+}
+.main-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.btn{
+    border-radius: 8px;
+    padding: 10px 15px 10px;
+    cursor: pointer;
+}
+.quote-item{
+    border: 5px solid red;
+    padding:15px 10px 10px 15px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+.loader{
+    font-size: 30px;
+    font-weight: bolder;
+    display: none;
+
+}
+.loader.show{
+    display: block;
+}
+.text-container.hide{
+    display: none;
+}
