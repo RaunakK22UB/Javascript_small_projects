@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+.button-wrapper button.active{
+    background-color: black;
+    color: blanchedalmond;
+}
+.home{
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color:rgb(148, 158, 250);
+    cursor: pointer;
+}
+.services{
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(148, 158, 250);
+    cursor: pointer;
+}
+
+.contact{
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(148, 158, 250);
+    cursor: pointer;
+}
+
+.content-wrapper{
+    padding: 100px;
+    border:5px solid blue;
+    background-color: rgb(203, 203, 252);
+    border-radius: 30px;
+}
+
+.content.active{
+    display: block;
+} 
+
+.content{
+    display: none;
+    font-size: large;
+} 
