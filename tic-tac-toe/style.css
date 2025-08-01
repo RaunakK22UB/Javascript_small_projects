@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 15px;
+    
+}
+h1{
+    text-align: center;
+}
+.board{
+    width:450px;
+    height:450px;
+    display: grid;
+    margin-left: auto;
+    margin-right:auto;
+    grid-template-columns: repeat(3,1fr);
+    gap:2px;
+}
+.square{
+    border: 2px solid purple;
+    background-color: rgb(222, 189, 254);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.reset-btn{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20px;
+     padding: 12px 12px;
+     display:block;
+     background-color: rgb(121, 9, 226);
+     color: blanchedalmond;
+     font-weight: bolder;
+     cursor: pointer;
+}
+.message{
+ text-align: center;
+      display:block;
+      font-size: 30px;
+      padding-top: 20px;
+      padding-bottom:20px ;
+
+}
