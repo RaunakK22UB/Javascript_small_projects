@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    padding: 15px;
+}
+h1{
+    text-align: center;
+}
+
+
+.filter-buttons-wrapper{
+    display: flex;
+    gap:10px;
+    margin: 20px 0px;
+}
+.filter-buttons-wrapper button{
+    padding :12px 20px;
+    font-size: larger;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+    background-color:rgb(57, 129, 21);
+}
+.content-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.content-wrapper .card{
+    width:32%;
+    padding:30px;
+    background-color: rgb(125, 241, 160);
+    font-size: 30px;
+}
+.hide{
+    display: none;
+}
