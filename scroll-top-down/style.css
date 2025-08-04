@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+.main-content p{
+    margin-bottom: 10px;
+}
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-scrollDown {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    font-size: larger;
+    background-color: bisque;
+
+}
+.btn-scrollDown.hidden {
+   display: none;
+}
+.loader{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    margin: 300px;
+}
+.btn-scrollUp {
+    margin-top: 30px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    font-size: larger;
+    background-color: bisque;
+}
+.btn-scrollUp.hidden {
+   display: none;
+}
+
+.loader.hide {
+    display: none;
+}
+
+.loader {
+    display: block;
+}
