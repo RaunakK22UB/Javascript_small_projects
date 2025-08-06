@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  background-color: #ddd;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 40px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: #ffffff;
+  border:1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: rgb(0, 176, 38);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 5px;
+  width: 0%;
+  z-index: -1;
+}
+
+.icon-wrapper {
+  background-color: rgb(126, 11, 250);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e69090;
+}
+.icon-wrapper.active {
+background-color: rgb(23, 185, 15);
+  border: 3px solid #f0f900;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper i {
+  position: absolute;
+  font-size: 25px;
+  bottom: 25px;
+}
+
+.icon-wrapper .label {
+  position: absolute;
+  font-size: 20px;
+  bottom: -30px;
+  font-weight: bold;
+}
+.btn-prev,.btn-next{
+    background-color: rgb(48, 15, 182);
+    color: white;
+    font-size: larger;
+    border-radius: 8px;
+    padding: 10px 15px;
+   cursor: pointer;
+    
+}
+.btn-prev:disabled{
+    cursor:not-allowed;
+    opacity: 0.65;
+}
+.btn-next:disabled{
+    cursor:not-allowed;
+    opacity: 0.65;
+}
+
+/* if you are confused about how this icon-wrapper came in middle of the icon and label , when this both ate inside it 
+/* }
+
+
+/* ✅ What’s happening visually?
+Each step looks like this in HTML:
+
+html
+Copy
+Edit
+<div class="icon-wrapper active">
+  <i class="fa-brands fa-facebook"></i>
+  <p class="label">Facebook</p>
+</div>
+And .icon-wrapper has these 3 things visually:
+
+The circle background.
+
+The icon (e.g., Facebook logo).
+
+The label ("Facebook").
+
+ Now, let’s break it down step-by-step: 1. How the circle is created:
+css
+Copy
+Edit
+.icon-wrapper {
+  background-color: rgb(126, 11, 250);  /* PURPLE background */
+  /* border-radius: 50%;                   /* Makes it a circle */
+  /* height: 15px;
+  width: 15px;
+  border: 3px solid #e69090;            /* PINK border */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+/* }
+So this entire div.icon-wrapper is a small circle with a purple center and a pink border.
+
+BUT…
+/*  */
+/* That circle is technically a container for the icon and label.
+ 2. Why the icon and label appear outside the circle visually
+Check this:
+
+css
+Copy
+Edit
+.icon-wrapper i {
+  position: absolute;
+  font-size: 25px;
+  bottom: 25px; */
+ 
+
+/* .icon-wrapper .label {
+  position: absolute;
+  font-size: 20px;
+  bottom: -30px;
+  font-weight: bold;
+}  */
+
+/* 
+  This is the key!
+
+position: absolute → Removes the icon and label from the circle layout.
+
+bottom: 25px → Pushes the icon above the circle.
+
+bottom: -30px → Pushes the label below the circle.
+
+So visually:
+
+scss
+Copy
+Edit
+(icon)
+   ↑     (bottom: 25px)
+[circle]
+   ↓     (bottom: -30px)
+(label)
+Even though the icon and label are inside .icon-wrapper, they’re positioned freely using position: absolute.
+
+✅ 3. How does it all come together?
+DOM structure:
+html
+Copy
+Edit
+<div class="progress-container">
+  <div class="icon-wrapper">
+    <i class="fa-brands fa-facebook"></i>  <-- Absolutely positioned above
+    <p class="label">Facebook</p>          <-- Absolutely positioned below
+  </div>
+</div>
+Visually rendered:
+pgsql
+Copy
+Edit
+    (icon)
+      ↑
+ [circle here] ← this is `.icon-wrapper`
+      ↓
+   (label)  */ 

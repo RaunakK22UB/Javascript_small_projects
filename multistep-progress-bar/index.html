@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>Multi step progress bar</h1>
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress"></div>
+                <div class="icon-wrapper active">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p class="label">Facebook</p>
+                </div>
+
+                <div class="icon-wrapper ">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <p class="label">X</p>
+                </div>
+
+                <div class="icon-wrapper ">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p class="label">Linkedin</p>
+                </div>
+
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-github"></i>
+                    <p class="label">Github</p>
+                </div>
+            
+        </div>
+        <button class="btn-prev" disabled>Previous</button>
+        <button class="btn-next">Next</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
