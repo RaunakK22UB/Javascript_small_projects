@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    padding: 15px;
+ 
+}
+h1{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.post{
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(219, 186, 250);
+}
+
+.top-section{
+    position: fixed;
+    top:0px;
+    z-index: 1;
+    width: 100%;
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+.progress-container{
+    width:100%;
+    height: 10px;
+    background-color: black;
+}
+.progress-bar{
+    height: 10px;
+    width: 0%;
+    background-color: rgb(215, 87, 8);
+}
+
+.post-container{
+    margin: 40px auto 0px auto;
+    padding-top:40px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
