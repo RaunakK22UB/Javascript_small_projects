@@ -1,0 +1,6 @@
+.loading.show{
+    display: block;
+}
+.loading{
+    display: none;;
+}
