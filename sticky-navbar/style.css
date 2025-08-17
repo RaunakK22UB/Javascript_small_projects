@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+    padding: 15px;
+}
+h1{
+    text-align: center;
+}
+.header{
+    background-color: rgb(249, 210, 153);
+    padding:30px;
+    
+}
+.navbar{
+    overflow: hidden;
+    background-color:rgb(238, 148, 11);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap:15px;
+}
+
+.navbar a{
+    color: balck;
+    font-size: 20px;
+    padding:5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    background-color: rgb(251, 235, 10);
+}
+.content{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    font-size: medium;
+}
+
+.fix-navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+
+}
+
+
