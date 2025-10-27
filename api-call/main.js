@@ -32,7 +32,7 @@ const Listcontainer = document.querySelector('.post-list-container')
 // }
 
 
-// fetch using async awaut 
+// fetch using async await
 
 async function fetchUsingAsynAwait(){
     try{

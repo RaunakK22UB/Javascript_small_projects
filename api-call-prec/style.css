@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-container{
+    padding-top:100px ;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.List-data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post{
+    gap: 10px;
+}
