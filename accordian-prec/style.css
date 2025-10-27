@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(216, 181, 249);
+}
+
+.section{
+    min-height: 100vh;
+    padding-top: 100px;
+    background-color: rgb(190, 190, 252);
+}
+.main{
+
+    background-color: blue;
+}
+.accordian_content{
+    display: none;
+}
+
+.accordian_tittle.active  + .accordian_content{
+    display: block;
+
+}
+
+.accordian_tittle.active i{
+    transform: rotate(180deg);
+}

@@ -7,7 +7,7 @@ stars.forEach((starItem, index)=>{
     starItem.addEventListener('mouseover',handleMouseover);
     starItem.addEventListener('click',handlesOnClick);
     starItem.addEventListener('mouseleave',handleMouseleave);
-});
+});                  
 
 
 function handleMouseover(event){

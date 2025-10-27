@@ -25,44 +25,45 @@ const data = [
     },
 ];
 
-const accordionwrapper = document.querySelector('.accordion');
+const accordianWrapper = document.querySelector('.accordian')
+
+function view_data(){
+   accordianWrapper.innerHTML = data.map((dataItem)=>
+     `
+        <div class="accordian_item">
+        <div class="accordian_tittle">
+        <h3>${dataItem.question}</h3>
+        <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <div class="accordian_content">
+         <h4>${dataItem.answer}</h4>
+        </div>
+        </div>
 
 
-function createAccordionData() {
-    accordionwrapper.innerHTML = data.map(
-        (dataItem) => `
-           <div class="accordion_item">
-           <div class="accordion_title">
-           <h3>${dataItem.question}<h3>
-           <i class="fa-solid fa-arrow-down"></i>
-           </div>
-
-           <div class="accordion_content">
-           <p>${dataItem.answer}</p>
-           </div>
-           </div>
-        `
-    )
+     `
+   ).join(" ");
 }
 
-createAccordionData();
-
-const getAccordiontitles = document.querySelectorAll('.accordion_title')
+view_data();
 
 
 
-getAccordiontitles.forEach((currentTitle)=>{
-    currentTitle.addEventListener('click',(event)=>{
-            if(currentTitle.classList.contains('active')){
-                currentTitle.classList.remove('active')
-            }
-            else{
-                 let allactivetitle = document.querySelectorAll('.active');
-                 allactivetitle.forEach((title)=>{
-                    title.classList.remove('active')
-                 })
+const accordianTittle = document.querySelectorAll('.accordian_tittle');
 
-                  currentTitle.classList.add('active');
-            }
+accordianTittle.forEach((element) => {
+    element.addEventListener('click',(event)=>{
+        if(element.classList.contains('active')){
+            element.classList.remove('active')
+        }else{
+            let allactiveElement = document.querySelectorAll('.active')
+
+            allactiveElement.forEach((e)=>{
+                  e.classList.remove('active')
+            })
+
+            element.classList.add('active')
+        }
     })
-} )
+    
+});

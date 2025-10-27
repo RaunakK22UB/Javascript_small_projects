@@ -41,6 +41,7 @@ function createPaginationNumbers() {
         createPageNumber(i);
     }
 }
+createPaginationNumbers();
 
 function handleCurrentActivepageNumber() {
     document.querySelectorAll('.pagination-number').forEach((button) => {
@@ -88,17 +89,15 @@ function handleCurrentPage(getCurrentPageNumber) {
     const getPreviousRange = (getCurrentPageNumber - 1) * paginationLimit;  
     const getCurrentrange = getCurrentPageNumber * paginationLimit;  
 
-    extractAllListitems.forEach((listItems, index) => {
+    extractAllListitems.forEach((listItems, index) => {  // sab par hide lagado aur 
         listItems.classList.add("hide");
 
      
-        if (index >= getPreviousRange && index < getCurrentrange) {
+        if (index >= getPreviousRange && index < getCurrentrange) {  // aur jo iss range me hai uss ko show karo bas
             listItems.classList.remove("hide");
         }
     });
 }
-
-createPaginationNumbers();
 handleCurrentPage(1);
 
 prevButton.addEventListener('click', () => {

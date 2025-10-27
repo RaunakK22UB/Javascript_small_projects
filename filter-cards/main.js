@@ -91,11 +91,7 @@ allCards.forEach((SingleCrad)=>{
              SingleCrad.classList.remove("hide");
     } 
 })
-
-
 }
-
-
 
 allButtons.forEach((singleButton)=>{
     singleButton.addEventListener(('click'),()=>{

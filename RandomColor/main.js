@@ -1,9 +1,13 @@
+
+
 const HexBtn = document.querySelector('.hex-color-button');
 const HexColorValue = document.querySelector('.hex-color-name');
 const ButtonColor = document.querySelector('.hex-color-button');
 const HexMainContainer = document.querySelector('.hex-color-container');
 const copyHexButton = document.querySelector('.copy-hex-color')
-// to create random colour
+
+
+//--------------------------------------------------------------To create random colour
 
 HexBtn.addEventListener('click', () => {
     let chars = '0123456789ABCDEF';
@@ -29,7 +33,7 @@ copyHexButton.addEventListener('click',copytexts);
 
 
 
-// code for the rgb color generator
+//----------------------------------------------------------------------------code for the rgb color generator
 const mainRGB = document.querySelector('.rgb-color-container');
 const RGBred=document.querySelector('#Red')
 const RGBgreen = document.querySelector('#green');

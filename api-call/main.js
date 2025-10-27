@@ -36,8 +36,8 @@ const Listcontainer = document.querySelector('.post-list-container')
 
 async function fetchUsingAsynAwait(){
     try{
-                 const fetchresult = await fetch('https://jsonplaceholder.typicode.com/posts',{
-        method:"GET",
+                const fetchresult = await fetch('https://jsonplaceholder.typicode.com/posts',{
+                 method:"GET",
       })
 
       const result = await fetchresult.json();
