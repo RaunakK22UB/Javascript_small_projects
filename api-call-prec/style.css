@@ -17,3 +17,6 @@
 .post{
     gap: 10px;
 }
+.delete-btn{
+   cursor: pointer;
+}
